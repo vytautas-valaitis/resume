@@ -1,0 +1,129 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+%\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*] \renewcommand\labelitemi{$\circ$}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+%\newcommand{\resumeItemListStart}{\begin{itemize}}
+%\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://valaitis.net/}{\Large dr. Vytautas Valaitis}} & \href{mailto:vytautas@valaitis.net}{vytautas@valaitis.net}\\
+  & +370 673 37482 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubItem{PhD in Informatics,}{Vilnius University, Lithuania, 2016.}
+    \resumeSubItem{MSc in Informatics,}{Vilnius University, Lithuania, 2011.}
+    \resumeSubItem{BSc in Software Engineering,}{Vilnius University, Lithuania, 2009.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vilnius University, Software Engineering Faculty,}{Assistant Professor, 2017 - Present.}
+    \resumeSubItem{Monet Lt, UAB, Vilnius,}{Researcher, Lead Developer, 2018 - Present.}
+    \resumeSubItem{Space Science and Technology Institute, Vilnius, Lithuania,}{Junior Researcher, 2018 - 2019.}
+    \resumeSubItem{Vilnius University, Software Engineering Faculty,}{Lecturer, 2011 - 2017.}
+    \resumeSubItem{Magma Solutions UAB, Vilnius, Lithuania,}{Engineer Developer, 2017.}
+    \resumeSubItem{Vilnius University, Informatics Faculty,}{Junior Researcher, 2013 - 2015.}
+    \resumeSubItem{VsI Inovatyvus inzineriniai projektai, Vilnius, Lithuania,}{Lead Developer, 2014 - 2015.}
+    \resumeSubItem{UAB Teltonika, Vilnius, Lithuania,}{Embedded Developer, 2009 - 2011.}
+    \resumeSubItem{AB Lietuvos Energija, Vilnius, Lithuania,}{Developer, 2007 - 2008.}
+    \resumeSubItem{UAB Prototechnikos Iranga, Vilnius, Lithuania,}{Developer, 2006 - 2007.}
+  \resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lithuanian,}{native}
+    \resumeSubItem{English,}{good understanding speaking and writing.}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Hybrid UAV Kolibris,}{KAM-01-08, 2016.}
+    \resumeSubItem{High-dimensionality and small data size problems in classification of biomedical and financial data,}{MIP-13011, 2013 - 2015.}
+    \resumeSubItem{Lituanica SAT-1,}{2012 - 2014.}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+    \resumeSubHeadingListStart
+    \resumeSubItem{Valaitis, V. et al Minimizing Hexapod Robot Foot Deviations Using Multilayer Perceptron.}{International Journal of Advanced Robotic Systems. Vol. 12, 2015.}
+    \resumeSubItem{Valaitis, V. et al Piezoelectric Force Sensors for Hexapod Transportation Platform.}{Transport: Special Issue on Smart and Sustainable Transport. Vol. 30, No. 3, 2015.}
+    \resumeSubItem{Valaitis, V. et al A Price We Pay for Inexact Dimensionality Reduction.}{Bioinformatics and Biomedical Engineering. p. 289-300, 2015.}
+    \resumeSubItem{Valaitis, V. Learning Inverse Kinematics Problem in Changing Task Environment.}{The 12th Scandinavian AI conference. Vol 257, p. 299-302, 2013.}
+  \resumeSubHeadingListEnd
+
+%-----------CONFERENCES-----------------
+\section{Conferences}
+  \resumeSubHeadingListStart
+    \resumeSubItem{The 3rd IEEE Workshop  on Bio-Inspired Signal and Image Processing, Vilnius, Lithuania, 2014.}{Multi-agent Neural Network Approach on Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{The 12th Scandinavian AI conference, Aalborg, Denmark, 2013.}{Learning Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{Numerical Computations: Theory and Algorithms, Falerna, Italy, 2013.}{Learning Motion Patterns of Robotic Arm.}
+  \resumeSubHeadingListEnd
+
+\end{document}

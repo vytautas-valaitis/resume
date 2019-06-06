@@ -1,0 +1,130 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+%\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*] \renewcommand\labelitemi{$\circ$}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+%\newcommand{\resumeItemListStart}{\begin{itemize}}
+%\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://valaitis.net/}{\Large dr. Vytautas Valaitis}} & \href{mailto:vytautas@valaitis.net}{vytautas@valaitis.net}\\
+  & +370 673 37482 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Išsilavinimas}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Informatikos mokslų daktaras,}{Vilniaus universitetas, 2016.}
+    \resumeSubItem{Informatikos magistras,}{Vilniaus universitetas, 2011.}
+    \resumeSubItem{Programų sistemų bakalauras,}{Vilniaus universitetas, 2009.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Darbo patirtis}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Vilniaus universitetas, programų sistemų katedra,}{asistentas, nuo 2017.}
+    \resumeSubItem{Monet Lt, UAB, Vilnius,}{tyrėjas, vyr. programuotojas, nuo 2018.}
+    \resumeSubItem{VšĮ Kosmoso mokslo ir technologijų institutas, Vilnius,}{jaunesnysis mokslo darbuotojas, 2018 - 2019.}
+    \resumeSubItem{Vilniaus universitetas, programų sistemų katedra,}{lektorius, 2011 - 2017.}
+    \resumeSubItem{Magma Solutions UAB, Vilnius,}{programuotojas inžinierius, 2017.}
+    \resumeSubItem{Vilniaus universitetas, informatikos fakultetas,}{jaunasis mokslo darbuotojas, 2013 - 2015.}
+    \resumeSubItem{VšĮ Inovatyvūs inžineriniai projektai, Vilnius}{vyr. programuotojas, 2014 - 2015.}
+    \resumeSubItem{UAB Teltonika, Vilnius}{įterptinių sistemų programuotojas, 2009 - 2011.}
+    \resumeSubItem{AB Lietuvos Energija, Vilnius,}{programuotojas, 2007 - 2008.}
+    \resumeSubItem{UAB Prototechnikos Įranga, Vilnius,}{programuotojas, 2006 - 2007.}
+  \resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\section{Kalbos}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lietuvių,}{gimtoji.}
+    \resumeSubItem{Anglų,}{geras supratimas, rašymas ir kalbėjimas.}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projektai}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Hybrid UAV Kolibris,}{KAM-01-08, 2016.}
+    \resumeSubItem{High-dimensionality and small data size problems in classification of biomedical and financial data,}{MIP-13011, 2013 - 2015.}
+    \resumeSubItem{Lituanica SAT-1,}{2012 - 2014.}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publikacijos}
+    \resumeSubHeadingListStart
+    \resumeSubItem{Valaitis, V. et al Minimizing Hexapod Robot Foot Deviations Using Multilayer Perceptron.}{International Journal of Advanced Robotic Systems. Vol. 12, 2015.}
+    \resumeSubItem{Valaitis, V. et al Piezoelectric Force Sensors for Hexapod Transportation Platform.}{Transport: Special Issue on Smart and Sustainable Transport. Vol. 30, No. 3, 2015.}
+    \resumeSubItem{Valaitis, V. et al A Price We Pay for Inexact Dimensionality Reduction.}{Bioinformatics and Biomedical Engineering. p. 289-300, 2015.}
+    \resumeSubItem{Valaitis, V. Learning Inverse Kinematics Problem in Changing Task Environment.}{The 12th Scandinavian AI conference. Vol 257, p. 299-302, 2013.}
+  \resumeSubHeadingListEnd
+
+%-----------CONFERENCES-----------------
+\section{Konferencijos}
+  \resumeSubHeadingListStart
+    \resumeSubItem{The 3rd IEEE Workshop  on Bio-Inspired Signal and Image Processing, Vilnius, Lithuania, 2014.}{Multi-agent Neural Network Approach on Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{The 12th Scandinavian AI conference, Aalborg, Denmark, 2013.}{Learning Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{Numerical Computations: Theory and Algorithms, Falerna, Italy, 2013.}{Learning Motion Patterns of Robotic Arm.}
+  \resumeSubHeadingListEnd
+
+\end{document}
