@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{report}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{fontspec}
 %\setmainfont[Ligatures=TeX]{Times}
@@ -12,19 +12,23 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{psvectorian}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ right=10mm,
+ top=10mm,
+ bottom=10mm,
+}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -54,13 +58,8 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-%\renewcommand{\labelitemii}{$\circ$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*] \renewcommand\labelitemi{$\circ$}}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-%\newcommand{\resumeItemListStart}{\begin{itemize}}
-%\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,19 +67,35 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://valaitis.net/}{\Large dr. Vytautas Valaitis}} & \href{mailto:vytautas@valaitis.net}{vytautas@valaitis.net}\\
-  & +370 673 37482 \\
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}} c r}
+\textbf{\href{http://valaitis.net/}{\Large dr. Vytautas Valaitis}} & \textit{\textbf{C.V.}} & \href{mailto:vytautas@valaitis.net}{vytautas@valaitis.net}\\
+  & & +370 673 37482 \\
 \end{tabular*}
 
+\begin{pspicture}(0,0)(0,0)%
+  \rput[bl](0,0){\psvectorian[width=1cm,flip]{77}}
+\end{pspicture}
+
 %-----------EDUCATION-----------------
+\begin{minipage}[t]{.6\textwidth}
+\vspace{5pt}
 \section{Išsilavinimas}
   \resumeSubHeadingListStart
     \resumeSubItem{Informatikos mokslų daktaras,}{Vilniaus universitetas, 2016.}
     \resumeSubItem{Informatikos magistras,}{Vilniaus universitetas, 2011.}
     \resumeSubItem{Programų sistemų bakalauras,}{Vilniaus universitetas, 2009.}
   \resumeSubHeadingListEnd
-
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{.38\textwidth}
+\vspace{5pt}
+\section{Kalbos}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lietuvių,}{gimtoji.}
+    \resumeSubItem{Anglų,}{geras supratimas, rašymas ir kalbėjimas.}
+  \resumeSubHeadingListEnd
+\end{minipage}
+\vspace{-10pt}
 %-----------EXPERIENCE-----------------
 \section{Darbo patirtis}
   \resumeSubHeadingListStart
@@ -95,15 +110,8 @@
     \resumeSubItem{AB Lietuvos Energija, Vilnius,}{programuotojas, 2007 - 2008.}
     \resumeSubItem{UAB Prototechnikos Įranga, Vilnius,}{programuotojas, 2006 - 2007.}
   \resumeSubHeadingListEnd
-
-%-----------LANGUAGES-----------------
-\section{Kalbos}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Lietuvių,}{gimtoji.}
-    \resumeSubItem{Anglų,}{geras supratimas, rašymas ir kalbėjimas.}
-  \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------------
+\vspace{-15pt}
 \section{Projektai}
   \resumeSubHeadingListStart
     \resumeSubItem{Didelės apimties buhalterinių duomenų kaupimo ir analizės technologijų kūrimo galimybių studija,}{01.2.1-MITA-T-851-01-0022, 2018 - 2019.}
@@ -111,23 +119,27 @@
     \resumeSubItem{High-dimensionality and small data size problems in classification of biomedical and financial data,}{MIP-13011, 2013 - 2015.}
     \resumeSubItem{Lituanica SAT-1,}{2012 - 2014.}
   \resumeSubHeadingListEnd
-
 %-----------PUBLICATIONS-----------------
+\vspace{-15pt}
 \section{Publikacijos}
     \resumeSubHeadingListStart
-    \resumeSubItem{Valaitis, V. et al Minimizing Hexapod Robot Foot Deviations Using Multilayer Perceptron.}{International Journal of Advanced Robotic Systems. Vol. 12, 2015.}
-    \resumeSubItem{Valaitis, V. et al Piezoelectric Force Sensors for Hexapod Transportation Platform.}{Transport: Special Issue on Smart and Sustainable Transport. Vol. 30, No. 3, 2015.}
-    \resumeSubItem{Valaitis, V. et al A Price We Pay for Inexact Dimensionality Reduction.}{Bioinformatics and Biomedical Engineering. p. 289-300, 2015.}
-    \resumeSubItem{Valaitis, V. Learning Inverse Kinematics Problem in Changing Task Environment.}{The 12th Scandinavian AI conference. Vol 257, p. 299-302, 2013.}
+    \resumeSubItem{Valaitis, V. et al Minimizing Hexapod Robot Foot Deviations Using Multilayer Perceptron.\\}{International Journal of Advanced Robotic Systems. Vol. 12, 2015.}
+    \resumeSubItem{Valaitis, V. et al Piezoelectric Force Sensors for Hexapod Transportation Platform.\\}{Transport: Special Issue on Smart and Sustainable Transport. Vol. 30, No. 3, 2015.}
+    \resumeSubItem{Valaitis, V. et al A Price We Pay for Inexact Dimensionality Reduction.\\}{Bioinformatics and Biomedical Engineering. p. 289-300, 2015.}
+    \resumeSubItem{Valaitis, V. Learning Inverse Kinematics Problem in Changing Task Environment.\\}{The 12th Scandinavian AI conference. Vol 257, p. 299-302, 2013.}
   \resumeSubHeadingListEnd
-
 %-----------CONFERENCES-----------------
+\vspace{-15pt}
 \section{Konferencijos}
   \resumeSubHeadingListStart
-    \resumeSubItem{Numerical Computations: Theory and Algorithms, Crotone, Italy, 2019.}{Learning Aerial Image Similarity using Triplet Networks.}
-    \resumeSubItem{The 3rd IEEE Workshop  on Bio-Inspired Signal and Image Processing, Vilnius, Lithuania, 2014.}{Multi-agent Neural Network Approach on Inverse Kinematics Problem in Changing Task Environment.}
-    \resumeSubItem{Numerical Computations: Theory and Algorithms, Falerna, Italy, 2013.}{Learning Motion Patterns of Robotic Arm.}
-    \resumeSubItem{The 12th Scandinavian AI conference, Aalborg, Denmark, 2013.}{Learning Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{Numerical Computations: Theory and Algorithms, Crotone, Italy, 2019.\\}{Learning Aerial Image Similarity using Triplet Networks.}
+    \resumeSubItem{The 3rd IEEE Workshop  on Bio-Inspired Signal and Image Processing, Vilnius, Lithuania, 2014.\\}{Multi-agent Neural Network Approach on Inverse Kinematics Problem in Changing Task Environment.}
+    \resumeSubItem{Numerical Computations: Theory and Algorithms, Falerna, Italy, 2013.\\}{Learning Motion Patterns of Robotic Arm.}
+    \resumeSubItem{The 12th Scandinavian AI conference, Aalborg, Denmark, 2013.\\}{Learning Inverse Kinematics Problem in Changing Task Environment.}
   \resumeSubHeadingListEnd
-
+\vfill 
+\begin{pspicture}(0,0)
+  %\psframe[fillstyle=solid,fillcolor=blue!20,linewidth=3pt](0,0)(\textwidth,1)
+  \rput[b](.5\textwidth,0){\psvectorian[width=2cm]{70}}
+\end{pspicture}
 \end{document}
